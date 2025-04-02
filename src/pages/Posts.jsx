@@ -7,7 +7,7 @@ const Posts = () => {
     useEffect(() => {
         fetch("https://67c5b4f3351c081993fb1ab6.mockapi.io/api/posts")
             .then((response) => response.json())
-            .then((data) => setPosts(data.slice(0, 5)))  // Mostra solo i primi 5 post
+            .then((data) => setPosts(data.slice(0, 5)))
             .catch((error) => console.error("Errore nel recupero dei post:", error));
     }, []);
 
